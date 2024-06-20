@@ -10,7 +10,6 @@ exports.default = async function(configuration) {
         --alg "SHA256" \
         --tsaurl "http://timestamp.digicert.com" \
         --tsretries 10 \
-        --replace \
         "${configuration.path}"
         `,
         { stdio: "inherit"}
